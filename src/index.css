@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LifeSync Design System - Health & Wellness Focused
+All colors MUST be HSL for perfect theming.
+*/
+
+@layer base {
+  :root {
+    /* Background System */
+    --background: 210 20% 98%;
+    --foreground: 210 15% 12%;
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 12%;
+
+    /* Popover System */
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 12%;
+
+    /* Primary - Health Blue */
+    --primary: 204 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 204 85% 65%;
+    --primary-dark: 204 85% 25%;
+
+    /* Secondary - Wellness Green */
+    --secondary: 142 75% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 142 75% 65%;
+
+    /* Muted System */
+    --muted: 210 25% 95%;
+    --muted-foreground: 210 15% 45%;
+
+    /* Accent - Energy Orange */
+    --accent: 25 95% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success - Achievement Green */
+    --success: 120 65% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Attention Yellow */
+    --warning: 45 95% 55%;
+    --warning-foreground: 210 15% 12%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border & Input */
+    --border: 210 25% 88%;
+    --input: 210 25% 88%;
+    --ring: 204 85% 45%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(204 85% 45%), hsl(142 75% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(204 85% 45%), hsl(204 85% 65%), hsl(142 75% 45%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 25% 98%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 55%), hsl(45 95% 55%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(204 85% 45% / 0.1);
+    --shadow-medium: 0 8px 30px hsl(204 85% 45% / 0.15);
+    --shadow-strong: 0 12px 40px hsl(204 85% 45% / 0.2);
+    --shadow-glow: 0 0 30px hsl(204 85% 45% / 0.3);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Mode - Professional Health Theme */
+    --background: 210 35% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 210 30% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 210 30% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 204 85% 55%;
+    --primary-foreground: 210 35% 8%;
+    --primary-light: 204 85% 75%;
+    --primary-dark: 204 85% 35%;
+
+    --secondary: 142 75% 55%;
+    --secondary-foreground: 210 35% 8%;
+    --secondary-light: 142 75% 75%;
+
+    --muted: 210 25% 18%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 25 95% 65%;
+    --accent-foreground: 210 35% 8%;
+
+    --success: 120 65% 55%;
+    --success-foreground: 210 35% 8%;
+
+    --warning: 45 95% 65%;
+    --warning-foreground: 210 35% 8%;
+
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 210 35% 8%;
+
+    --border: 210 25% 25%;
+    --input: 210 25% 25%;
+    --ring: 204 85% 55%;
+
+    /* Dark Mode Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(204 85% 55%), hsl(142 75% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(204 85% 35%), hsl(204 85% 55%), hsl(142 75% 45%));
+    --gradient-card: linear-gradient(145deg, hsl(210 30% 12%), hsl(210 25% 15%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 65%), hsl(45 95% 65%));
+
+    /* Dark Mode Shadows */
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 8px 30px hsl(0 0% 0% / 0.4);
+    --shadow-strong: 0 12px 40px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 30px hsl(204 85% 55% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
