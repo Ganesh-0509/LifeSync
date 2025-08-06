@@ -7,7 +7,7 @@ This project showcases a clean UI/UX and is suitable for SaaS, startup, or produ
 
 ## 🌐 Live Demo
 
-Coming soon…
+[Front end Demo](https://ganesh-0509.github.io/LifeSync/)
 
 ---
 
